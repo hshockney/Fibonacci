@@ -18,4 +18,8 @@ class TestFibonacci < MiniTest::Test
        fib_of_three = Fibonacci.of(3)
        assert_equal 2, fib_of_three
     end
+    def test_fibonacci_of_ten_is_fifty_five
+       fib_of_ten = Fibonacci.of(10)
+       assert_equal 55, fib_of_ten
+    end
 end
